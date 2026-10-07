@@ -159,6 +159,7 @@ cp ../../README.md "$dmgfolder"
 
 cp PkgInfo "$appfolder/Contents"
 cp transgui.icns "$appfolder/Contents/Resources"
+cp menubar.png "$appfolder/Contents/Resources"
 sed -e "s/@prog_ver@/$prog_ver/" Info.plist > "$appfolder/Contents/Info.plist"
 
 # Ad-hoc sign the bundle so macOS (Sequoia 15+ / Tahoe 26) attributes the app's
